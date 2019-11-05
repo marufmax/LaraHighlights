@@ -10,7 +10,7 @@ type: docker
 steps:
   - name: frontend
     pull: if-not-exists
-    image: node:8.1.2
+    image: node:8.9.0
     commands:
       - node -v
       - npm -v
