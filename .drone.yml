@@ -25,7 +25,7 @@ steps:
     commands:
       - php -v
       - composer -V
-      - cp .env.example .env
+      - cp .env.test .env
       - composer install --prefer-dist
       - php artisan key:generate
       - php artisan migrate
