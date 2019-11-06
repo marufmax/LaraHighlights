@@ -10,11 +10,9 @@ cache:
     - node_modules
     - vendor
 before_script:
-  - cp .env.travis .env
-  - sudo mysql -e 'create database larahighlights;'
+  - cp .env.test .env
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
   - php artisan key:generate
-  - php artisan migrate
 script:
   - vendor/bin/phpunit
