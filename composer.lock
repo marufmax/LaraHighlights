@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b9e73ad57a9bbfb35d3c7cc0d815d97",
+    "content-hash": "e3528753400ab7f2e380381b46bef8c3",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1173,6 +1173,55 @@
                 "type"
             ],
             "time": "2015-07-25T16:39:46+00:00"
+        },
+        {
+            "name": "pratyushpundir/laravel-buefy-preset",
+            "version": "0.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pratyushpundir/laravel-buefy-preset.git",
+                "reference": "fb3181290c4913449ae482a1ab56af024f7e6905"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pratyushpundir/laravel-buefy-preset/zipball/fb3181290c4913449ae482a1ab56af024f7e6905",
+                "reference": "fb3181290c4913449ae482a1ab56af024f7e6905",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PratyushPundir\\LaravelBuefyPreset\\BuefyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PratyushPundir\\LaravelBuefyPreset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "pratyushpundir",
+                    "email": "pratyushpundir@icloud.com"
+                }
+            ],
+            "description": "This preset provides UI components that marry Bulma and VueJS together in the form of Buefy for any new Laravel site / web-app.",
+            "keywords": [
+                "buefy",
+                "bulma",
+                "laravel",
+                "laravel bulma vuejs",
+                "laravel frontend presets",
+                "laravel vue bulma",
+                "vuejs"
+            ],
+            "time": "2019-08-27T16:43:58+00:00"
         },
         {
             "name": "psr/container",

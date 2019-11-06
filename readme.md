@@ -15,6 +15,9 @@ Travis:
 - Voting
 - Bookmark
 
+## Colors
+(Color plate)[https://coolors.co/ebc947-d1faff-04afdd-0c4372-9bb6ce]
+
 ## Stacks
 
 - Laravel
