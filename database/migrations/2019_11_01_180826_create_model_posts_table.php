@@ -15,13 +15,13 @@ class CreateModelPostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('creator_id');
+            $table->unsignedBigInteger('creator_id');
             
             $table->foreign('creator_id')
                 ->references('id')
                 ->on('users');
             
-            $table->unsignedInteger('category_id');
+            $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')
                 ->references('id')
                 ->on('categories');

@@ -23,7 +23,6 @@
 <div id="app">
     @include('shared.bulma-nav')
 
-    @include('shared.hero')
     <main class="content" style="margin-bottom: 0; overflow: auto;">
 
         @yield('content')

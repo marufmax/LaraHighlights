@@ -32,15 +32,25 @@
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a class="button is-primary is-small" @click="openRegisterModal" v-if="!userIsLoggedIn">
+                    @if (Auth::check())
+                        <a class="button is-light is-small" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    @else
+                    <a class="button is-primary is-small" href="/login">
                         <strong>Register</strong>
                     </a>
-                    <a class="button is-light is-small" @click="openLoginModal" v-if="!userIsLoggedIn">
+                    <a class="button is-light is-small" href="/login">
                         Log in
                     </a>
-                    <a class="button is-light is-small" @click="logout" v-else>
-                        Logout
-                    </a>
+                    @endif
+
                 </div>
             </div>
         </div>

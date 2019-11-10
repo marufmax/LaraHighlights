@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class, 'creator_id', 'id');
     }
+    
+    public function setPasswordAttribute(string $password)
+    {
+        return $this->attributes['password'] = \Hash::make($password);
+    }
 }

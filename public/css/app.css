@@ -15504,3 +15504,17 @@ html {
   margin: 0 auto;
 }
 
+.category_icon {
+  max-width: 10%;
+  color: #118fe4;
+  fill: #ff7f50;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.category_text {
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
